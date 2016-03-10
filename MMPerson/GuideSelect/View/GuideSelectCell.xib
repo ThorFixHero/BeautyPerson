@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GuideSelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="186" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="186" height="131"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8R-bp-8Go" userLabel="美女标题标签">
+                        <rect key="frame" x="10" y="10" width="166" height="111"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcr-Ql-uZD" userLabel="显示的对号">
+                        <rect key="frame" x="166" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="0PL-ro-ien"/>
+                            <constraint firstAttribute="height" constant="20" id="ayK-Ua-0bE"/>
+                        </constraints>
+                        <state key="selected" image="selected"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="h8R-bp-8Go" secondAttribute="trailing" constant="10" id="2ls-NI-zUG"/>
+                <constraint firstAttribute="trailing" secondItem="tcr-Ql-uZD" secondAttribute="trailing" id="8iQ-Um-cOh"/>
+                <constraint firstAttribute="bottom" secondItem="h8R-bp-8Go" secondAttribute="bottom" constant="10" id="9fq-CX-VNW"/>
+                <constraint firstItem="tcr-Ql-uZD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CsI-Ib-fwQ"/>
+                <constraint firstItem="h8R-bp-8Go" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="TLC-MS-cko"/>
+                <constraint firstItem="h8R-bp-8Go" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="qwg-3Y-dNf"/>
+            </constraints>
+            <size key="customSize" width="186" height="131"/>
+            <connections>
+                <outlet property="isChooseImage" destination="tcr-Ql-uZD" id="pcF-Yx-u51"/>
+                <outlet property="tipsLab" destination="h8R-bp-8Go" id="nE4-f8-ZqN"/>
+            </connections>
+            <point key="canvasLocation" x="359" y="146.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="selected" width="42" height="42"/>
+    </resources>
+</document>

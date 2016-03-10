@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MMCollectionViewCell" id="gTV-IL-0wX" customClass="MMCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="178" height="186"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VjP-R9-rBL">
+                        <rect key="frame" x="0.0" y="0.0" width="178" height="186"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYM-YX-NXy" userLabel="照片的张数">
+                        <rect key="frame" x="135" y="143" width="35" height="35"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="38I-wV-Uf9"/>
+                            <constraint firstAttribute="height" constant="35" id="G78-1W-mEC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VjP-R9-rBL" secondAttribute="bottom" id="0iR-EZ-mHc"/>
+                <constraint firstItem="VjP-R9-rBL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2Lb-7N-0Ns"/>
+                <constraint firstAttribute="trailing" secondItem="IYM-YX-NXy" secondAttribute="trailing" constant="8" id="BNX-Z0-86u"/>
+                <constraint firstAttribute="bottom" secondItem="IYM-YX-NXy" secondAttribute="bottom" constant="8" id="M9O-y1-LvX"/>
+                <constraint firstAttribute="trailing" secondItem="VjP-R9-rBL" secondAttribute="trailing" id="Pdc-RZ-3sB"/>
+                <constraint firstItem="VjP-R9-rBL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UQ1-LE-lTw"/>
+            </constraints>
+            <size key="customSize" width="178" height="186"/>
+            <connections>
+                <outlet property="cellImage" destination="VjP-R9-rBL" id="XAz-4O-fBn"/>
+                <outlet property="numberLab" destination="IYM-YX-NXy" id="1c7-9X-KaX"/>
+            </connections>
+            <point key="canvasLocation" x="414" y="302"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+//
+//  MMPerson.pch
+//  MMPerson
+//
+//  Created by 徐文达 on 15/8/1.
+//  Copyright (c) 2015年 徐文达. All rights reserved.
+//
+
+#ifndef MMPerson_MMPerson_pch
+#define MMPerson_MMPerson_pch
+
+#ifdef __OBJC__
+
+#import "NetWorkHelper.h"
+
+/**
+ *  屏幕分辨率的宽高比，其中以iphone6为基准
+ */
+
+#define ratio MainHight/667
+
+#define MainHight [UIScreen mainScreen].bounds.size.height
+#define MainWidth [UIScreen mainScreen].bounds.size.width
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+#define MainWordColor [UIColor colorWithRed:63/255.0 green:81/255.0 blue:181/255.0 alpha:1.0]
+#define ButtonColor [UIColor colorWithRed:18/255.0 green:143/255.0 blue:208/255.0 alpha:1.0]
+#define LineColor [UIColor colorWithRed:211/255.0 green:211/255.0 blue:215/255.0 alpha:1.0]
+/**
+ *  主色调
+ */
+#define MainColor [UIColor colorWithRed:242.0/255.0 green:242.0/255.0 blue:242.0/255.0 alpha:1.0]
+
+
+#define IOS7 ([[[UIDevice currentDevice] systemVersion]floatValue]>=7 ? 1:0)
+
+
+#define ViewBgColor [UIColor colorWithRed:242.0/255.0 green:242.0/255.0 blue:242.0/255.0 alpha:1.0]
+
+/**
+ *  主窗口色调
+ */
+
+#define MainWindowColor [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0]
+
+//开启DEBUG模式
+#define IPHONE4 [UIScreen mainScreen].bounds.size.height==480 ?1:0
+#define IPHONE5 [UIScreen mainScreen].bounds.size.height==568 ?1:0
+#define IPHONE6 [UIScreen mainScreen].bounds.size.height==667 ?1:0
+#define IPHONE6S [UIScreen mainScreen].bounds.size.height==736 ?1:0
+
+
+
+#if defined(DEBUG)
+
+#define WDLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define WDLog(...)
+
+#endif
+
+
+
+#endif
+
+#endif
