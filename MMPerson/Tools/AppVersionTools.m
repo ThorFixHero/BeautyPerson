@@ -2,8 +2,8 @@
 //  AppVersionTools.m
 //  MMPerson
 //
-//  Created by 徐文达 on 15/11/10.
-//  Copyright © 2015年 徐文达. All rights reserved.
+//  Created by WDTechnology on 15/11/10.
+//  Copyright © 2015年 WDTechnology. All rights reserved.
 //
 
 #import "AppVersionTools.h"
